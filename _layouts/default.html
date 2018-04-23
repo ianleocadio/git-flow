@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
-      a {
+      .nav-link {
         text-decoration: none;
         text-color:white;
       }
@@ -24,8 +24,8 @@
         </header>
         <nav>
           <p style="text-align: right; margin-right:10px;">
-            <a href="{{site.baseurl}}/">Início</a> |
-            <a href="{{site.baseurl}}/fechamento">Fechamento de ciclos</a>
+            <a class="nav-link" href="{{site.baseurl}}/">Início</a> |
+            <a class="nav-link" href="{{site.baseurl}}/fechamento">Fechamento de ciclos</a>
           </p>
         </nav>
     </div>
