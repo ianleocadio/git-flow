@@ -58,7 +58,7 @@ ___
 ### Status
 * ```$ git status```
     * Verifica o estado das mudanças da branch atual
-    
+
 ### Log
 * ```$ git log -N```
     * Lista os __N__ commits anteriores 
@@ -231,7 +231,7 @@ ___
      > Correções de pré-release já realizadas.
 
      > __Base__: master  _______  __Compare__: develop
-    ____
+    
 
     #### Branches de correções:
 
