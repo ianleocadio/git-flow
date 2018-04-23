@@ -4,14 +4,14 @@ layout: default
 
 ### Índice
 
-1. [Fechamento de Sprint](https://github.com/technecloud/gov-erg-dpers/wiki/Fechamento-de-ciclos-do-gitflow#fechamento-de-sprint)
-2. [Fechamento de Release](https://github.com/technecloud/gov-erg-dpers/wiki/Fechamento-de-ciclos-do-gitflow#fechamento-de-release)
-3. [Fechamento de Hotfix](https://github.com/technecloud/gov-erg-dpers/wiki/Fechamento-de-ciclos-do-gitflow#fechamento-de-hotfix)
-____
+1. [Fechamento de Sprint](https://ianleocadio.github.io/git-flow/fechamento#fechamento-de-sprint)
+2. [Fechamento de Release](https://ianleocadio.github.io/git-flow/fechamento#fechamento-de-release)
+3. [Fechamento de Hotfix](https://ianleocadio.github.io/git-flow/fechamento#fechamento-de-hotfix)
 
 
 
-![alt](https://github.com/technecloud/gov-erg-dpers/wiki/img/Versoes.png)
+
+![alt](https://ianleocadio.github.io/git-flow/fechamento/img/Versoes.png)
 
 >Releases são entregas de momentos da aplicação, cada release demarca um ponto de versionamento definitivo. Para gerar uma release 
 > devemos nos atentar primeiramente as versões e tags de identificação.
