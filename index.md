@@ -1,34 +1,34 @@
 ### Indice
-1. [Comandos](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#comandos)
-    * [Clone](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#clone)
-    * [Pull](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#pull)
-    * [Checkout](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#checkout)
-    * [Status](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#status)
-    * [Log](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#log)
-    * [Branch](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#branch)
-    * [Commit](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#commit)
-    * [Merge](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#merge)
-    * [Push](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#push)
-2. [Branches](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#branches)
-    * [Master](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#master)
-    * [Develop](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#develop)
-    * [Sprint](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#sprint)
-    * [Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#story)
-    * [Task](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#task)
-3. [GitFlow p/ Scrum](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#gitflow-p-scrum)
-    * [Començando a desenvolver](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#come%C3%A7ando-a-desenvolver)
-        * [@ Story independente](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-story-independente)
-        * [@ Task _dependente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-task-dependente-de-story)
-        * [@ Task _independente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-task-independente-de-story)
-    * [Desenvolvendo...](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#desenvolvendo)
-        * [@ Story e Task](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-story-e-task)
-        * [Cuidados no desenv.](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#cuidados-a-serem-tomados-durante-o-desenvolvimento)
-    * [Término do desenvolvimento](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#t%C3%A9rmino-do-desenvolvimento)
-        * [@ Story independente e/ou Task _independente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-story-independente-eou-task-independente-de-story)
-        * [@ Task _dependente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-task-dependente-de-story-1)
-4. [Pull Request](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#pull-request)
-    * [Nomenclaturas](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#nomenclaturas)
-5. [Versões/Tags](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#vers%C3%B5estags)
+1. [Comandos](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#comandos)
+    * [Clone](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#clone)
+    * [Pull](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#pull)
+    * [Checkout](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#checkout)
+    * [Status](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#status)
+    * [Log](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#log)
+    * [Branch](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#branch)
+    * [Commit](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#commit)
+    * [Merge](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#merge)
+    * [Push](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#push)
+2. [Branches](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#branches)
+    * [Master](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#master)
+    * [Develop](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#develop)
+    * [Sprint](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#sprint)
+    * [Story](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#story)
+    * [Task](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#task)
+3. [GitFlow p/ Scrum](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#gitflow-p-scrum)
+    * [Començando a desenvolver](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#come%C3%A7ando-a-desenvolver)
+        * [@ Story independente](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#-story-independente)
+        * [@ Task _dependente_ de Story](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#-task-dependente-de-story)
+        * [@ Task _independente_ de Story](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#-task-independente-de-story)
+    * [Desenvolvendo...](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#desenvolvendo)
+        * [@ Story e Task](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#-story-e-task)
+        * [Cuidados no desenv.](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#cuidados-a-serem-tomados-durante-o-desenvolvimento)
+    * [Término do desenvolvimento](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#t%C3%A9rmino-do-desenvolvimento)
+        * [@ Story independente e/ou Task _independente_ de Story](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#-story-independente-eou-task-independente-de-story)
+        * [@ Task _dependente_ de Story](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#-task-dependente-de-story-1)
+4. [Pull Request](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#pull-request)
+    * [Nomenclaturas](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#nomenclaturas)
+5. [Versões/Tags](https://ianleocadio.github.io/git-flow/Git-no-dia-a-dia#vers%C3%B5estags)
 
 
 ## Comandos
@@ -108,12 +108,12 @@ ___
 
 ### Story
 * Nomenclatura
-    * story/<Código do Jira>
+    * story/*
 >   Visa o versionamento do desenvolvimento do requisito previsto guardando sua progressão
 
 ### Task
 * Nomenclatura
-    * task/<Código do Jira>
+    * task/*
 >    Há duas opções para branches de task:
 > > Quando duas pessoas trabalham em somente uma Story 
 
@@ -126,7 +126,7 @@ ___
 
 ## GitFlow p/ Scrum
 
-![alt](https://ianleocadio.github.io/git-flow/wiki/img/gitflow.png)
+![alt](https://ianleocadio.github.io/git-flow/img/gitflow.png)
 
 ### Começando a desenvolver:
 
@@ -183,7 +183,7 @@ $ git push
 ```
 > Após atualizada, realizar o Pull Request do requisito com a ___base___ no sprint e o ___compare___ na branch que queira finalizar, não esquecendo da nomenclatura padrão para finalização de desenvolvimento de requisitos:
 
-*  Developed -> Task(Story)/<código do jira>
+*  Developed -> Task(Story)/*
 
 #### @ Task _dependente_ de Story
 
@@ -202,28 +202,28 @@ ___
 ### Pull Request
 
 * #### Nomenclaturas:
-     * __Developed -> Task/<Código do jira>__
+     * __Developed -> Task/*__
      > __Propósito:__ Término do desenvolvimento de Task _independente_
 
      > __Condição de aceite:__ Após aprovação do _code review_
 
      > __Base__: sprint  _______  __Compare__: task/*
      
-     * __Developed -> Story/<Código do jira>__
+     * __Developed -> Story/*__
      > __Propósito:__ Término do desenvolvimento de Story em geral
 
      > __Condição de aceite:__ Após aprovação do _code review_
 
      > __Base__: sprint  _______  __Compare__: story/*
      
-     * __Fechamento de Sprint <Versão>__
+     * __Fechamento de Sprint *__
      > __Propósito:__ Pull request aberto para finalização de sprint.
 
      > __Condição de aceite:__ Necessidade do fechamento do sprint e dermacar que naquele ponto da sprint houve seu fechamento na versão <*>
 
      > __Base__: develop  _______  __Compare__: sprint
      
-     * __Release <Versão>__
+     * __Release *__
      > __Propósito:__ Realizar entregas
 
      > __Condição de aceite:__  Grande parte dos requisitos previstos devem estar na develop já desenvolvidos e aprovados por QA. 
@@ -233,21 +233,21 @@ ___
     ____
     #### Branches de correções:
 
-    * __Fix -> Sprint <Versão>__
+    * __Fix -> Sprint *__
      > __Propósito:__ Correções gerais pré finalização de sprint
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
 
-     > __Base__: sprint  _______  __Compare__: fix/sprint-<versão>
+     > __Base__: sprint  _______  __Compare__: fix/sprint-*
 
-    * __Fix -> Release <Versão>__
+    * __Fix -> Release *__
      > __Propósito:__ Correções gerais pré finalização de release
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
 
-     > __Base__: develop  _______  __Compare__: fix/release-<versão>
+     > __Base__: develop  _______  __Compare__: fix/release-*
 
-     * __Hotfix -> Release <Versão>__
+     * __Hotfix -> Release *__
      > __Propósito:__ Correções pós entrega de release
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
