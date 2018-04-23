@@ -233,7 +233,7 @@ ___
      > __Base__: master  _______  __Compare__: develop
     
 
-    #### Branches de correções:
+* #### Branches de correções:
 
     * __Fix -> Sprint *__
      > __Propósito:__ Correções gerais pré finalização de sprint
