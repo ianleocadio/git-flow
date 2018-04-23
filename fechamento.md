@@ -46,7 +46,7 @@ ____
       ```
 4. Por fim, verificar se a develop está com o status de commits: "This branch is even with sprint."
 
-[Subir](https://github.com/technecloud/gov-erg-dpers/wiki/Fechamento-de-ciclos-do-gitflow#%C3%8Dndice)
+[Subir](https://ianleocadio.github.io/git-flow/fechamento#%C3%8Dndice)
 ____
 ## Fechamento de Release
 1. Criar __Pull request__
@@ -86,10 +86,10 @@ ____
     * __Nomenclatura:__ release-@.@.@
 5. Na aba de releases do repositório, selecione a opção de _Draft a new release_
 
-    ![alt](https://github.com/technecloud/gov-erg-dpers/wiki/img/gerando_tag.png)
+    ![alt](https://ianleocadio.github.io/git-flow/fechamento/img/gerando_tag.png)
 6. Publique a release!
 
-[Subir](https://github.com/technecloud/gov-erg-dpers/wiki/Fechamento-de-ciclos-do-gitflow#%C3%8Dndice)
+[Subir](https://ianleocadio.github.io/git-flow/fechamento#%C3%8Dndice)
 ____
 ## Fechamento de Hotfix
 1. Criar __Pull request__
@@ -128,10 +128,10 @@ ____
     * __Nomenclatura:__ hotfix/release-@.@.@
 6. Na aba de releases do repositório, selecione a opção de _Draft a new release_
 
-    ![alt](https://github.com/technecloud/gov-erg-dpers/wiki/img/gerando_tag_2.png)
+    ![alt](https://ianleocadio.github.io/git-flow/fechamento/img/gerando_tag_2.png)
 7. Publique a release!
 
-[Subir](https://github.com/technecloud/gov-erg-dpers/wiki/Fechamento-de-ciclos-do-gitflow#%C3%8Dndice)
+[Subir](https://ianleocadio.github.io/git-flow/fechamento#%C3%8Dndice)
 
 
 
