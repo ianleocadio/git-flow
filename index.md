@@ -231,6 +231,7 @@ ___
 
      > __Base__: master  _______  __Compare__: develop
     ____
+    
     #### Branches de correções:
 
     * __Fix -> Sprint *__
