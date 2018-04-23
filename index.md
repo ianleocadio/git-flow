@@ -1,123 +1,277 @@
----
-layout: default
----
+### Indice
+1. [Comandos](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#comandos)
+    * [Clone](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#clone)
+    * [Pull](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#pull)
+    * [Checkout](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#checkout)
+    * [Status](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#status)
+    * [Log](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#log)
+    * [Branch](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#branch)
+    * [Commit](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#commit)
+    * [Merge](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#merge)
+    * [Push](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#push)
+2. [Branches](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#branches)
+    * [Master](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#master)
+    * [Develop](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#develop)
+    * [Sprint](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#sprint)
+    * [Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#story)
+    * [Task](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#task)
+3. [GitFlow p/ Scrum](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#gitflow-p-scrum)
+    * [Començando a desenvolver](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#come%C3%A7ando-a-desenvolver)
+        * [@ Story independente](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-story-independente)
+        * [@ Task _dependente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-task-dependente-de-story)
+        * [@ Task _independente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-task-independente-de-story)
+    * [Desenvolvendo...](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#desenvolvendo)
+        * [@ Story e Task](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-story-e-task)
+        * [Cuidados no desenv.](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#cuidados-a-serem-tomados-durante-o-desenvolvimento)
+    * [Término do desenvolvimento](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#t%C3%A9rmino-do-desenvolvimento)
+        * [@ Story independente e/ou Task _independente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-story-independente-eou-task-independente-de-story)
+        * [@ Task _dependente_ de Story](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#-task-dependente-de-story-1)
+4. [Pull Request](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#pull-request)
+    * [Nomenclaturas](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#nomenclaturas)
+5. [Versões/Tags](https://github.com/technecloud/gov-erg-dpers/wiki/Git-no-dia-a-dia#vers%C3%B5estags)
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+## Comandos
 
-There should be whitespace between paragraphs.
+### Clone
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+* ```$ git clone <HTTPS.git>```
+    * Copia o repositório remoto para o local de trabalho.
 
-# Header 1
+### Pull
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+* ```$ git pull```
+    * Busca as atualizações no repositório remoto e as trás para o repositório local. Novas branches, novos commits, entre outros
 
-## Header 2
+___
+### Checkout
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
 
-### Header 3
+* ```$ git checkout <local-branch>```
+    * Troca para a branch especificada. Considerando branches  __já existentes__ localmente e remotamente
+* ```$ git checkout -b <new-branch>```
+    * Cria e troca para branch criada. Após o push a branch será criada remotamente também
+* ```$ git checkout -b <new-branch> <existing-branch>``` 
+    * Cria uma nova branch a partir de uma branch remota/local. Após o push a branch será criada remotamente também
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+___
+### Status
+* ```$ git status```
+    * Verifica o estado das mudanças da branch atual
+### Log
+* ```$ git log -N```
+    * Lista os __N__ commits anteriores 
+
+___
+### Branch
+* ```$ git branch --list```
+    * Lista as branches locais.
+* ```$ git branch -D <branch>```
+    * Exclui a branch local.
+
+___
+### Commit
+
+* ```$ git add <archive's-path>```
+    *  Adiciona as modificações do arquivo ao versionamento do projeto
+* ```$ git add .```
+    * Adiciona todos os arquivos que tiveram mudanças ao versionamento do projeto
+* ```$ git commit -m "<Commit message>"```
+    * Efetiva os arquivos e suas mudanças e atrela-os a uma mesagem
+
+### Merge
+* ```$ git merge <branch>```
+    * Trás as atualizações e diferenças da branch selecionada na branch atual
+
+### Push
+* ```$ git push origin```
+    * Manda todas as alterações commitadas localmente para o repositório remoto
+
+
+
+## Branches
+
+* Master
+* Develop
+* Sprint
+* Story
+* Task
+
+### Master
+>    Reflete o código-fonte principal para entregas do projeto.
+
+### Develop
+>   Reflete o código-fonte após cada final de sprint
+
+### Sprint
+>   Durante o sprint esta branch agrega todos as stories que tiveram seu desenvolvimento e testes finalizados
+
+### Story
+* Nomenclatura
+    * story/<Código do Jira>
+>   Visa o versionamento do desenvolvimento do requisito previsto guardando sua progressão
+
+### Task
+* Nomenclatura
+    * task/<Código do Jira>
+>    Há duas opções para branches de task:
+> > Quando duas pessoas trabalham em somente uma Story 
+
+> Ou
+
+> > Quando há diversas stories semelhantes que dependem uma da outra. Então é criado uma task e atrelada a todas as stories, evitando a crição de diversas branches de Story ou uma branch de Story com nomenclatura errada
+
+
+___
+
+## GitFlow p/ Scrum
+
+![alt](https://ianleocadio.github.io/git-flow/wiki/img/gitflow.png)
+
+### Começando a desenvolver:
+
+#### @ Story independente
+
+> ![alt](https://ianleocadio.github.io/git-flow/img/sprint%20e%20story.png)
+
+> Quando há somente um desenvolvedor no mesmo requisito, somente cria-se a branch de _story_, com base na branch _sprint_,  e seu desenvolvimento é versionado nela.
+
+#### @ Task _dependente_ de Story
+
+> ![alt](https://ianleocadio.github.io/git-flow/img/story%20e%20task.png)
+
+> Quando há mais de um desenvolvedor na _story_ e há diferentes requisitos a serem trabalhados, cria-se a branch de ___story___ e com base nesta, as branches de ___task___ cada uma com seu respectivo código do Jira.
+
+#### @ Task _independente_ de Story
+
+> ![alt](https://ianleocadio.github.io/git-flow/img/sprint%20e%20task.png)
+
+> Quando há a necessidade de desenvolvimento de uma __task__ independente de uma __story__, cria-se a __task__ a partir da __sprint__ adotando-a como branch pai. Importante frisar que neste caso é preciso trazer as constantes mudanças, sempre que houver, da __sprint__ para esta nova branch __task__.
+___
+### Desenvolvendo...
+
+#### @ Story e Task
+> Commits em relação ao requisito deverão ser feitos em suas respectivas branches.
 ```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+-- Adiciona todos os arquivos não versionados ao versionamento
+$ git add .
+-- Realiza commit local dos arquivos adicionados ao versionamento
+$ git commit -m "<Mensagem do commit local>"
+-- Realiza o push dos commits locais para a branch remota
+$ git push origin
 ```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+#### __Cuidados a serem tomados durante o desenvolvimento:__
+   * Sempre manter a branch em que você estiver trabalhando atualizada com a branch pai dela
+   * Responsáveis pelas Stories deverão manter a respectiva branch da Story atualizada com a Sprint
+   * Tasks dependentes de Story __não precisam de pull request com a Story__ basta mergiá-la diretamente na Story pai
 
 
-### Definition lists can be used with HTML syntax.
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
+____
+### Término do desenvolvimento:
+#### @ Story independente e/ou Task _independente_ de Story
+> Quando houver o término do requisito o esquema de finalização é o mesmo nestes dois casos. Primeramente deve-se realizar o pull para trazer todas as atualizações da __sprint__ remota para a __sprint__ local. Em seguida realizar o merge da Sprint com a __task__ ou a __story__:
+```git
+$ git checkout task/* (ou git checkout story/*)
+$ git remote update -p
+$ git merge --ff-only origin/sprint
+-- Se o merge falhar utilize o rebase:
+$ git rebase -p origin/sprint
+-- Em seguida realize o push
+$ git push
+-- Caso o push falhe, verifique o log de commits e veja se há alguma divergencia, caso contrário utilize o parâmetro -f no push
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+> Após atualizada, realizar o Pull Request do requisito com a ___base___ no sprint e o ___compare___ na branch que queira finalizar, não esquecendo da nomenclatura padrão para finalização de desenvolvimento de requisitos:
 
+*  Developed -> Task(Story)/<código do jira>
+
+#### @ Task _dependente_ de Story
+
+> Quando há o término do desenvolvimento de uma ___task___ deve-se mergiar a ____task___ na ___story___ sem a necessidade de um pull request:
+```git
+$ git checkout story/*
+$ git remote update -p
+$ git merge --ff-only task/*
+-- Se o merge falhar utilize o rebase:
+$ git rebase -p task/*
+$ git push
+-- Caso o push falhe, verifique o log de commits e veja se há alguma divergencia, caso contrário utilize o parâmetro -f no push
 ```
-The final element.
-```
+___
+
+### Pull Request
+
+* #### Nomenclaturas:
+     * __Developed -> Task/<Código do jira>__
+     > __Propósito:__ Término do desenvolvimento de Task _independente_
+
+     > __Condição de aceite:__ Após aprovação do _code review_
+
+     > __Base__: sprint  _______  __Compare__: task/*
+     
+     * __Developed -> Story/<Código do jira>__
+     > __Propósito:__ Término do desenvolvimento de Story em geral
+
+     > __Condição de aceite:__ Após aprovação do _code review_
+
+     > __Base__: sprint  _______  __Compare__: story/*
+     
+     * __Fechamento de Sprint <Versão>__
+     > __Propósito:__ Pull request aberto para finalização de sprint.
+
+     > __Condição de aceite:__ Necessidade do fechamento do sprint e dermacar que naquele ponto da sprint houve seu fechamento na versão <*>
+
+     > __Base__: develop  _______  __Compare__: sprint
+     
+     * __Release <Versão>__
+     > __Propósito:__ Realizar entregas
+
+     > __Condição de aceite:__  Grande parte dos requisitos previstos devem estar na develop já desenvolvidos e aprovados por QA. 
+     > Correções de pré-release já realizadas.
+
+     > __Base__: master  _______  __Compare__: develop
+    ____
+    #### Branches de correções:
+
+    * __Fix -> Sprint <Versão>__
+     > __Propósito:__ Correções gerais pré finalização de sprint
+
+     > __Condição de aceite:__  Aprovações no _code review_ e _QA_
+
+     > __Base__: sprint  _______  __Compare__: fix/sprint-<versão>
+
+    * __Fix -> Release <Versão>__
+     > __Propósito:__ Correções gerais pré finalização de release
+
+     > __Condição de aceite:__  Aprovações no _code review_ e _QA_
+
+     > __Base__: develop  _______  __Compare__: fix/release-<versão>
+
+     * __Hotfix -> Release <Versão>__
+     > __Propósito:__ Correções pós entrega de release
+
+     > __Condição de aceite:__  Aprovações no _code review_ e _QA_
+
+     > __Base__: master  _______  __Compare__: develop
+
+
+
+___
+
+### Versões/Tags
+
+
+
+* ___v1.0___
+> Versão inicial
+
+* ___v1.1___
+> Entrega 1 (release)
+* ___v1.1.1___
+> Hotfix da entrega 1 (release)
+* ___v1.2___
+> Entrega 2
+* ___v1.2.1___
+> Hotfix da entrega 2
+
+
