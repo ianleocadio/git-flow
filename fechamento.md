@@ -46,7 +46,6 @@ ____
       ```
 4. Por fim, verificar se a develop está com o status de commits: "This branch is even with sprint."
 
-[Subir](https://ianleocadio.github.io/git-flow/fechamento#%C3%8Dndice)
 
 
 ## Fechamento de Release
@@ -90,7 +89,6 @@ ____
     ![alt](https://ianleocadio.github.io/git-flow/img/gerando_tag.png)
 6. Publique a release!
 
-[Subir](https://ianleocadio.github.io/git-flow/fechamento#%C3%8Dndice)
 
 
 ## Fechamento de Hotfix
@@ -133,7 +131,6 @@ ____
     ![alt](https://ianleocadio.github.io/git-flow/img/gerando_tag_2.png)
 7. Publique a release!
 
-[Subir](https://ianleocadio.github.io/git-flow/fechamento#%C3%8Dndice)
 
 
 
