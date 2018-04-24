@@ -110,11 +110,15 @@ ___
 ### Story
 * Nomenclatura
     * story/*
+
+
 >   Visa o versionamento do desenvolvimento do requisito previsto guardando sua progressão
 
 ### Task
 * Nomenclatura
     * task/*
+
+
 >    Há duas opções para branches de task:
 > > Quando duas pessoas trabalham em somente uma Story 
 
@@ -149,6 +153,9 @@ ___
 
 > Quando há a necessidade de desenvolvimento de uma __task__ independente de uma __story__, cria-se a __task__ a partir da __sprint__ adotando-a como branch pai. Importante frisar que neste caso é preciso trazer as constantes mudanças, sempre que houver, da __sprint__ para esta nova branch __task__.
 ___
+
+
+
 ### Desenvolvendo...
 
 #### @ Story e Task
@@ -204,13 +211,15 @@ ___
 
 * #### Nomenclaturas:
      * __Developed -> Task/*__
+     
      > __Propósito:__ Término do desenvolvimento de Task _independente_
 
      > __Condição de aceite:__ Após aprovação do _code review_
 
      > __Base__: sprint  _______  __Compare__: task/*
      
-     * __Developed -> Story/*__
+     * __Developed -> Story/*__ 
+     
      > __Propósito:__ Término do desenvolvimento de Story em geral
 
      > __Condição de aceite:__ Após aprovação do _code review_
@@ -218,6 +227,7 @@ ___
      > __Base__: sprint  _______  __Compare__: story/*
      
      * __Fechamento de Sprint *__
+     
      > __Propósito:__ Pull request aberto para finalização de sprint.
 
      > __Condição de aceite:__ Necessidade do fechamento do sprint e dermacar que naquele ponto da sprint houve seu fechamento na versão <*>
@@ -225,6 +235,7 @@ ___
      > __Base__: develop  _______  __Compare__: sprint
      
      * __Release *__
+     
      > __Propósito:__ Realizar entregas
 
      > __Condição de aceite:__  Grande parte dos requisitos previstos devem estar na develop já desenvolvidos e aprovados por QA. 
@@ -236,6 +247,7 @@ ___
 * #### Branches de correções:
 
     * __Fix -> Sprint *__
+     
      > __Propósito:__ Correções gerais pré finalização de sprint
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
@@ -243,6 +255,7 @@ ___
      > __Base__: sprint  _______  __Compare__: fix/sprint-*
 
     * __Fix -> Release *__
+     
      > __Propósito:__ Correções gerais pré finalização de release
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
@@ -250,6 +263,7 @@ ___
      > __Base__: develop  _______  __Compare__: fix/release-*
 
      * __Hotfix -> Release *__
+     
      > __Propósito:__ Correções pós entrega de release
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
