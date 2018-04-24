@@ -152,10 +152,9 @@ ___
 > ![alt](https://ianleocadio.github.io/git-flow/img/sprint%20e%20task.png)
 
 > Quando há a necessidade de desenvolvimento de uma __task__ independente de uma __story__, cria-se a __task__ a partir da __sprint__ adotando-a como branch pai. Importante frisar que neste caso é preciso trazer as constantes mudanças, sempre que houver, da __sprint__ para esta nova branch __task__.
+
+
 ___
-
-
-
 ### Desenvolvendo...
 
 #### @ Story e Task
