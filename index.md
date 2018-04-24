@@ -119,8 +119,12 @@ ___
     * task/*
 
 
->    Há duas opções para branches de task:
-> > Quando duas pessoas trabalham em somente uma Story 
+>    Há três opções para branches de task:
+> > __Task Dependente__: Quando duas pessoas trabalham em somente uma Story 
+
+> Ou
+
+> > __Task Independente__: Quando é um requisito impovisado e não há uma Story dependente
 
 > Ou
 
