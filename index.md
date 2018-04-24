@@ -124,7 +124,7 @@ ___
 
 > Ou
 
-> > __Task Independente__: Quando é um requisito impovisado e não há uma Story dependente
+> > __Task Independente__: Quando é um requisito improvisado e não há uma Story dependente
 
 > Ou
 
