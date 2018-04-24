@@ -112,7 +112,7 @@ ___
     * story/*
 
 
->   Visa o versionamento do desenvolvimento do requisito previsto guardando sua progressão
+>   Visa o versionamento da progressão do requisito
 
 ### Task
 * Nomenclatura
@@ -198,7 +198,7 @@ $ git push
 
 #### @ Task _dependente_ de Story
 
-> Quando há o término do desenvolvimento de uma ___task___ deve-se mergiar a ____task___ na ___story___ sem a necessidade de um pull request:
+> Quando há o término do desenvolvimento de uma ___task___ deve-se mergiar a ___task___ na ___story___ sem a necessidade de um pull request:
 ```git
 $ git checkout story/*
 $ git remote update -p
