@@ -23,7 +23,7 @@ layout: default
 ____
 ## Fechamento de Sprint
 1. Criar __Pull request__
-    * __Nomenclatura:__ Fechamento do Sprint @
+    * __Nomenclatura:__ Fechamento do Sprint #
     * ___base:___ develop -------- ___compare:___ sprint
 2. Aceite do Pull request
     * Ação: __Create a merge commit__
@@ -50,7 +50,7 @@ ____
 
 ## Fechamento de Release
 1. Criar __Pull request__
-    * __Nomenclatura:__ Release v@.@.@
+    * __Nomenclatura:__ Release v#.#.#
     * ___base:___ master -------- ___compare:___ develop
 2. Aceite do Pull request
     * Ação: __Create a merge commit__
@@ -83,7 +83,7 @@ ____
       ```
 4. Criar uma branch de release temporária
     * __Objetivo:__ Branch backup da release e _target branch_ para tag
-    * __Nomenclatura:__ release-@.@.@
+    * __Nomenclatura:__ release-#.#.#
 5. Na aba de releases do repositório, selecione a opção de _Draft a new release_
 
     ![alt](https://ianleocadio.github.io/git-flow/img/gerando_tag.png)
@@ -93,8 +93,8 @@ ____
 
 ## Fechamento de Hotfix
 1. Criar __Pull request__
-    * __Nomenclatura:__ Hotfix -> Release v@.@.@
-    * ___base:___ master -------- ___compare:___ hotfix/release-@.@.@
+    * __Nomenclatura:__ Hotfix -> Release v#.#.#
+    * ___base:___ master -------- ___compare:___ hotfix/release-#.#.#
 2. Aceite do Pull request
     * Ação: __Squash and Merge__
         * Alterar o nome que será gerado para o nome correto do pull request, incluíndo (#Código do pull request)
@@ -125,7 +125,7 @@ ____
       ```
 4. Remover a branch de hotfix
 5. Criar uma branch de hotfix temporária em cima da __master__ para garantir uma branch backup da release e _target branch_ para gerar a nova tag
-    * __Nomenclatura:__ hotfix/release-@.@.@
+    * __Nomenclatura:__ hotfix/release-#.#.#
 6. Na aba de releases do repositório, selecione a opção de _Draft a new release_
 
     ![alt](https://ianleocadio.github.io/git-flow/img/gerando_tag_2.png)

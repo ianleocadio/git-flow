@@ -139,6 +139,8 @@ ___
 
 ### Começando a desenvolver:
 
+> Explicação breve de cada tipo de branch de desenvolvimento
+
 #### @ Story independente
 
 > ![alt](https://ianleocadio.github.io/git-flow/img/sprint%20e%20story.png)
@@ -171,8 +173,20 @@ $ git commit -m "<Mensagem do commit local>"
 -- Realiza o push dos commits locais para a branch remota
 $ git push origin
 ```
+
+> Atualizando Story com a Sprint
+```git
+$ git merge --ff-only origin/sprint
+-- Se o merge falhar utilize o rebase:
+$ git rebase -p origin/sprint
+-- Em seguida realize o push
+$ git push
+-- Caso o push falhe, verifique o log de commits e veja se há alguma divergencia, caso contrário utilize o parâmetro -f no push
+```
+
 #### __Cuidados a serem tomados durante o desenvolvimento:__
    * Sempre manter a branch em que você estiver trabalhando atualizada com a branch pai dela
+        * Ex: Story sempre atualizada com a Sprint. Task dependente sempre atualizada com a Story. Task independente sempre atualizada com a Sprint
    * Responsáveis pelas Stories deverão manter a respectiva branch da Story atualizada com a Sprint
    * Tasks dependentes de Story __não precisam de pull request com a Story__ basta mergiá-la diretamente na Story pai
 
@@ -223,23 +237,23 @@ ___
      
      * __Developed -> Story/*__ 
      
-     > __Propósito:__ Término do desenvolvimento de Story em geral
+     > __Propósito:__ Término do desenvolvimento de Story
 
      > __Condição de aceite:__ Após aprovação do _code review_
 
      > __Base__: sprint  _______  __Compare__: story/*
      
-     * __Fechamento de Sprint *__
+     * __Fechamento de Sprint #__
      
-     > __Propósito:__ Pull request aberto para finalização de sprint.
+     > __Propósito:__ Finalização de sprint.
 
      > __Condição de aceite:__ Necessidade do fechamento do sprint e dermacar que naquele ponto da sprint houve seu fechamento na versão <*>
 
      > __Base__: develop  _______  __Compare__: sprint
      
-     * __Release *__
+     * __Release #__
      
-     > __Propósito:__ Realizar entregas
+     > __Propósito:__ Gerar versões finais / realizar entregas
 
      > __Condição de aceite:__  Grande parte dos requisitos previstos devem estar na develop já desenvolvidos e aprovados por QA. 
      > Correções de pré-release já realizadas.
@@ -249,25 +263,25 @@ ___
 
 * #### Branches de correções:
 
-    * __Fix -> Sprint *__
+    * __Fix -> Sprint #__
      
-     > __Propósito:__ Correções gerais pré finalização de sprint
+     > __Propósito:__ Correções gerais referentes aos requisitos da sprint atual antes do seu término
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
 
      > __Base__: sprint  _______  __Compare__: fix/sprint-*
 
-    * __Fix -> Release *__
+    * __Fix -> Release #__
      
-     > __Propósito:__ Correções gerais pré finalização de release
+     > __Propósito:__ Correções gerais referentes aos requisitos da release a ser fechada
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
 
      > __Base__: develop  _______  __Compare__: fix/release-*
 
-     * __Hotfix -> Release *__
+     * __Hotfix -> Release #__
      
-     > __Propósito:__ Correções pós entrega de release
+     > __Propósito:__ Correções gerais referentes aos requisitos da release já finalizada
 
      > __Condição de aceite:__  Aprovações no _code review_ e _QA_
 
