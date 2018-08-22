@@ -49,6 +49,30 @@ ____
 
 
 ## Fechamento de Release
+#### Pré-requisitos:
+    
+* Commit de alteração da versão do projeto:
+    
+        mvn versions:set -DnewVersion=#.#.# -DprocessAllModules=true
+
+    Verifique se todos os arquivos pom.xml foram alterados corretamente. Em seguida execute a confirmação da alteração de versão.
+
+        mvn versions:commit
+
+    * Caso houve algum erro durante a alteração é possivel reverter utilizando o comando:
+
+            mvn versions:revert
+
+        Em seguida realize o comando ```mvn version:set``` novamente.
+
+    Realize o commit com a mensagem padrão:
+    ```Mudança de versão para v#.#.#```.
+    O commit deve ser realizado na branch __develop__.
+    
+
+
+#### Passo-a-passo
+
 1. Criar __Pull request__
     * __Nomenclatura:__ Release v#.#.#
     * ___base:___ master -------- ___compare:___ develop
@@ -92,6 +116,29 @@ ____
 
 
 ## Fechamento de Hotfix
+#### Pré-requisitos:
+    
+* Commit de alteração da versão do projeto:
+    
+        mvn versions:set -DnewVersion=#.#.# -DprocessAllModules=true
+
+    Verifique se todos os arquivos pom.xml foram alterados corretamente. Em seguida execute a confirmação da alteração de versão.
+
+        mvn versions:commit
+
+    * Caso houve algum erro durante a alteração é possivel reverter utilizando o comando:
+
+            mvn versions:revert
+
+        Em seguida realize o comando ```mvn version:set``` novamente.
+
+    Realize o commit com a mensagem padrão:
+    ```Mudança de versão para v#.#.#```.
+    O commit deve ser realizado na branch de __hotfix__.
+    
+
+
+#### Passo-a-passo
 1. Criar __Pull request__
     * __Nomenclatura:__ Hotfix -> Release v#.#.#
     * ___base:___ master -------- ___compare:___ hotfix/release-#.#.#
